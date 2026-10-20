@@ -2,7 +2,7 @@
 
 GROMACS simulations of the pea legumin hexamer and the vicilin trimer at 300 K, at 373 K, and at 373 K with the box sheared. Each condition was run twice for 1 ns. The repository holds the mdp files, the analysis and comparison scripts, and summary tables and figures.
 
-It follows up Legumin-Vicilin-Comparative-MD, which used single chains and dimers at 300 K and 400 K.
+It follows up Legumin-Vicilin-Dimer-Thermal-MD, which used single chains and dimers at 300 K and 400 K.
 
 This is a first pass. Two 1 ns replicates can show that an effect is large, but they can't show that a small one is absent, so read the limitations before quoting any number.
 
