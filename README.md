@@ -43,8 +43,6 @@ There are six production runs per protein, twelve in all, each 1 ns.
 | 373 K thermal | r1, r2 | NVT | Protein, Non-Protein |
 | 373 K shear | r1, r2 | NVT plus box deformation | System (one group) |
 
-No shear run was done at 300 K.
-
 Replicates r1 and r2 start from the same energy-minimised structure and differ only in the random seed. r1 uses `gen-seed = 111` in NVT and `ld-seed = 111` in production. r2 uses 222 for both. Within one replicate, the thermal and shear production runs start from the same end-of-NPT coordinates and velocities.
 
 The stage settings below were checked against the vicilin files at 373 K.
