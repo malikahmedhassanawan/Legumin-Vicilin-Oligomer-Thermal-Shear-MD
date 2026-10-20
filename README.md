@@ -154,17 +154,18 @@ The residue plots (373 K minus 300 K, and shear minus 373 K thermal) are in `res
 - The shear is gentle: a strain rate of 0.25 ns⁻¹ gives a total strain of only 0.25 in 1 ns. Stronger or longer shear is untested.
 - The thermostat grouping differs between thermal and shear runs (see [Shear](#shear)).
 - 
-## Repository layout
 
-```
-mdp/          nvt, npt, thermal and shear production files for both proteins
-scripts/
-  analysis/     one script per run type and protein
-  comparison/   all-runs comparison, one per protein
-results/
-  legumin/      summary CSVs and figures
-  vicilin/
-```
+## Repository Structure
+
+- **structures/** — AlphaFold3 output structures (.cif) and processed dimer PDBs
+- **alphafold_predictions/** — AlphaFold confidence (pLDDT) and chain-colored visualizations
+- **simulation_setup/** - GROMACS .mdp parameter files for both proteins (complete: em, ions, nvt, npt, md for each conditions) 
+- **simulations/** — Raw analysis output (.xvg) per protein, per condition
+- - **analysis/** — `legumin/` and `vicilin/` hold per-protein plots (RMSD, Rg, SASA, H-bonds, RMSF) across all conditions; `comparison of different conditions of legumin and vicilin
+comparisons; `summary_table.csv`/`.md` condenses all conditions into one numeric table
+- **notebooks/** — Full analysis pipeline (Colab-executed)
+- **docs/methods.md** — Detailed methodology, software versions, parameters
+- 
  ## Methods Summary
 
 | Stage | Tool | Details |
