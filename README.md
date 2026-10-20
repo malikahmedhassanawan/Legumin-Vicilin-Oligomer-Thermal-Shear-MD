@@ -169,5 +169,3 @@ results/
   legumin/      summary CSVs and figures
   vicilin/
 ```
-
-The trajectories aren't included. The protein-only `.xtc` files are 74 to 172 MB each, over GitHub's 100 MB file limit.
