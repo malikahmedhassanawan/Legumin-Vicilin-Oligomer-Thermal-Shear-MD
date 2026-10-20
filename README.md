@@ -150,7 +150,7 @@ The residue plots (373 K minus 300 K, and shear minus 373 K thermal) are in `res
 - - **analysis/** — `legumin/` and `vicilin/` hold per-protein plots (RMSD, Rg, SASA, H-bonds, RMSF) across all conditions; `comparison of different conditions of legumin and vicilin
 comparisons; `summary_table.csv`/`.md` condenses all conditions into one numeric table
 - **notebooks/** — Full analysis pipeline (Colab-executed)
-- **docs/methods.md** — Detailed methodology, software versions, parameters
+- **docs & methods md** — Detailed methodology, software versions, parameters
 
  ## Methods Summary
 
@@ -164,7 +164,7 @@ comparisons; `summary_table.csv`/`.md` condenses all conditions into one numeric
 | Analysis | RMSD, Rg, SASA, H-bonds, RMSF (chain-split) | via `gmx rms`, `gmx gyrate`, `gmx sasa`, `gmx hbond`, `gmx rmsf` |
 | Visualization | PyMOL, Matplotlib | Structure rendering and trajectory plots |
 
-Full parameter details, exact command-line invocations, and version numbers are documented in [`docs/methods.md`](docs/methods.md).
+Full parameter details, exact command-line invocations, and version numbers are documented in (docs & methods.md).
 
 ## Reproducing This Work
 
