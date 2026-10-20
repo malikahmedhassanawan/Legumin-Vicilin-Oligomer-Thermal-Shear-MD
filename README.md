@@ -151,7 +151,7 @@ The residue plots (373 K minus 300 K, and shear minus 373 K thermal) are in `res
 comparisons; `summary_table.csv`/`.md` condenses all conditions into one numeric table
 - **notebooks/** — Full analysis pipeline (Colab-executed)
 - **docs/methods.md** — Detailed methodology, software versions, parameters
-- 
+
  ## Methods Summary
 
 | Stage | Tool | Details |
