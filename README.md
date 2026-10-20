@@ -129,10 +129,6 @@ A SASA drop under shear looked likely in vicilin when only thermal r1 was availa
 
 Heating to 373 K lowers helix content by a similar relative amount in both (about 5 to 6 %), and the drop shows up in all four thermal replicates. Several RMSD curves are still rising at 1 ns, so last-half RMSD partly measures how far each run has drifted, not a settled value.
 
-### Per-residue differences
-
-The residue plots (373 K minus 300 K, and shear minus 373 K thermal) are in `results/*/figures/06_residue_deltas.png`. Heating raises C-alpha RMSF across most of the sequence in both proteins, most at the termini and at a few loops. In legumin, both shear runs seem to lower RMSF over roughly residues 290 to 360. That region is the one shear feature that looks worth testing with longer runs. The rest of the per-residue shear differences (SASA, helix, strand, hydrogen bonds) show no consistent pattern.
-
 ## Limitations
 
 - There are two replicates per condition. Differences can only be called separated or not, effects smaller than the replicate gap can't be resolved, and two pairs can look different by chance.
