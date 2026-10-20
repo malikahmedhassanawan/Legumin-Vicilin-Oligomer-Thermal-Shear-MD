@@ -83,10 +83,6 @@ This is imposed deformation of the periodic cell, not an applied stress, and no 
 
 One thing to keep in mind when reading shear against thermal results: the shear runs use a single thermostat group and the thermal runs use two. No shear difference turned up, so the mismatch didn't matter here, but a follow-up should use the same grouping for both.
 
-## Software and hardware
-
-GROMACS 2026.3 (conda-forge, CUDA build) on a Google Colab Tesla T4, launched with `gmx mdrun -ntmpi 1 -ntomp 2 -pin off`. Legumin ran at roughly 15 to 21 ns/day and vicilin at 31 to 35 ns/day. Analysis uses Python 3 (MDAnalysis, NumPy, SciPy, pandas, Matplotlib) and the GROMACS tools `rms`, `rmsf`, `gyrate`, `sasa`, `hbond` and `dssp`.
-
 ## Analysis
 
 Each run is analysed by one script, and all trajectories hold protein atoms only. The script first checks that the trajectory has 1001 frames from 0 to 1000 ps with no gaps or repeats, and stops if not. It then makes the molecules whole, brings the chains together across the periodic boundary (handled for the triclinic cell), fits every frame on the backbone and keeps every fifth one (201 frames, 5 ps apart). Chains are found from the residue numbering. The script stops if the chain count or sizes are unexpected, or if any chain loses all neighbours within 0.5 nm in any frame.
@@ -169,3 +165,34 @@ results/
   legumin/      summary CSVs and figures
   vicilin/
 ```
+ ## Methods Summary
+
+| Stage | Tool | Details |
+|---|---|---|
+| Structure prediction | AlphaFold3 | Homodimer models for both proteins |
+| MD engine | GROMACS 2026.3 (conda-forge, CUDA) | GPU-accelerated (Colab T4) |
+| Force field | AMBER99SB-ILDN | |
+| Water model | SPC/E | |
+| Conditions | 300K, 400K × 200ps, 500ps | 4 conditions per protein |
+| Analysis | RMSD, Rg, SASA, H-bonds, RMSF (chain-split) | via `gmx rms`, `gmx gyrate`, `gmx sasa`, `gmx hbond`, `gmx rmsf` |
+| Visualization | PyMOL, Matplotlib | Structure rendering and trajectory plots |
+
+Full parameter details, exact command-line invocations, and version numbers are documented in [`docs/methods.md`](docs/methods.md).
+
+## Reproducing This Work
+
+All simulations were run in Google Colab using free-tier GPU resources, making this pipeline accessible without dedicated HPC infrastructure. The full notebook pipeline is provided in [`notebooks/`](notebooks/), covering:
+
+1. Structure prediction and preprocessing
+2. GROMACS simulation setup and production runs
+3. Trajectory analysis and comparative visualization
+
+## Author
+
+**Malik Ahmed Hassan Awan**
+BS (Hons) Food Science and Technology, Bahauddin Zakariya University, Multan, Pakistan
+Contact: varietyhavenllc@gmail.com
+
+---
+
+*This work is part of an ongoing research effort connecting computational protein science to food security challenges in South Punjab, Pakistan, using locally available legume crops as a model system for sustainable protein engineering.*
