@@ -171,9 +171,3 @@ results/
 ```
 
 The trajectories aren't included. The protein-only `.xtc` files are 74 to 172 MB each, over GitHub's 100 MB file limit.
-
-## Relation to the dimer study
-
-The earlier repository, Legumin-Vicilin-Comparative-MD, used single chains and dimers at 300 K and 400 K for 200 to 500 ps. It reported a localised compaction of legumin at 400 K, about −1 % in Rg and about −2 % in SASA, concentrated at residues 260 to 320 and absent in vicilin.
-
-In the full hexamer at 373 K, Rg and SASA go up slightly (about +1 to +2.5 %) instead of down. The systems (dimer and hexamer), temperature (400 K and 373 K), length and solvent box all differ, so the two results shouldn't be put together. The 260 to 320 region does overlap the residues where the hexamer's shear RMSF reduction appears, which could be tested directly.
