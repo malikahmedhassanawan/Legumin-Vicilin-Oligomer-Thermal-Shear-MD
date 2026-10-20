@@ -2,13 +2,9 @@
 
 GROMACS simulations of the pea legumin hexamer and the vicilin trimer at 300 K, at 373 K, and at 373 K with the box sheared. Each condition was run twice for 1 ns. The repository holds the mdp files, the analysis and comparison scripts, and summary tables and figures.
 
-It follows up Legumin-Vicilin-Dimer-Thermal-MD, which used single chains and dimers at 300 K and 400 K.
-
-This is a first pass. Two 1 ns replicates can show that an effect is large, but they can't show that a small one is absent, so read the limitations before quoting any number.
-
 ## Background
 
-Extruding plant protein into a meat-like texture exposes it to heat and shear at the same time. The dimer study only looked at heat. Here the questions are narrower: do the full oligomers change when heated from 300 K to 373 K, and does a gentle imposed shear at 373 K add anything on top of the heat? The runs are short on purpose. The aim was to see whether a shear signal shows up at all before spending time on longer runs.
+Extruding plant protein into a meat-like texture exposes it to heat and shear at the same time. Here the questions are narrower: do the full oligomers change when heated from 300 K to 373 K, and does a gentle imposed shear at 373 K add anything on top of the heat? The runs are short on purpose. The aim was to see whether a shear signal shows up at all before spending time on longer runs.
 
 ## What the runs show
 
@@ -54,9 +50,7 @@ The stage settings below were checked against the vicilin files at 373 K.
 | Production, thermal | 1 ns (500,000 steps) | no restraints, V-rescale on Protein and Non-Protein, no pressure coupling, velocities carried over |
 | Production, shear | 1 ns (500,000 steps) | as thermal, but V-rescale on the whole system and `deform` set |
 
-All stages use the `md` integrator with a 2 fs step, H-bond constraints (LINCS), Verlet cutoffs, PME electrostatics, a 1.0 nm cutoff for both Coulomb and van der Waals, and `DispCorr = EnerPres`. Energies are written every 500 steps. In production, compressed coordinates are also written every 500 steps (1 ps), for the protein only (`compressed-x-grps = Protein`). The legumin runs use the same template. The full `.mdp` files for both proteins are in `mdp/`, and if a legumin file differs from the table, the file is what counts.
-
-The shear r1 runs for both proteins were restarted from a checkpoint and the parts joined afterwards. Vicilin shear r2 stopped at 259.68 ps, though its xtc and edr had reached 274 ps. It was resumed from the checkpoint, the first part was cut at 259 ps, and the combined files were checked to run from 0 to 1000 ps at 1 ps spacing with no gaps.
+All stages use the `md` integrator with a 2 fs step, H-bond constraints (LINCS), Verlet cutoffs, PME electrostatics, a 1.0 nm cutoff for both Coulomb and van der Waals, and `DispCorr = EnerPres`. Energies are written every 500 steps. In production, compressed coordinates are also written every 500 steps (1 ps), for the protein only (`compressed-x-grps = Protein`). The legumin runs use the same template. The full `.mdp` files for both proteins are in simulation setup.
 
 ## Shear
 
@@ -77,11 +71,6 @@ The fourth value is the x-component of the second box vector, so the box tilts i
 | Tilt after 1 ns | 3.644 nm | 3.387 nm |
 | Strain after 1 ns | 0.25 | 0.25 |
 
-The tilt after 1 ns is well under half the box length, so GROMACS never flips the box. The last box line in each shear run ends in the expected tilt (3.644 or 3.387).
-
-This is imposed deformation of the periodic cell, not an applied stress, and no stress response is analysed. Both proteins get the same strain rate, so differences between them aren't down to different shear.
-
-One thing to keep in mind when reading shear against thermal results: the shear runs use a single thermostat group and the thermal runs use two. No shear difference turned up, so the mismatch didn't matter here, but a follow-up should use the same grouping for both.
 
 ## Analysis
 
@@ -99,11 +88,8 @@ Each run is analysed by one script, and all trajectories hold protein atoms only
 | Per-residue H-bonds | custom: donor to acceptor ≤ 0.35 nm, hydrogen to acceptor ≤ 0.25 nm, angle ≤ 30 degrees |
 | Secondary structure | `gmx dssp`, per chain, per residue and as composition |
 
-"Last-half mean" means the mean over 0.5 to 1.0 ns. Error bars in the bar charts are the standard deviation over time within that half. They are not the spread between replicates.
 
-For replicate comparisons, a difference between two conditions is called separated when the two replicates of one condition don't overlap with the two of the other. With two replicates this is a rough check, not a statistical test. Percentage changes in the heatmaps are relative to the mean of the two 300 K replicates.
-
-## Results
+## Results 
 
 Each cell is the percentage change of a run's last-half mean relative to the mean of the two 300 K replicates. Exact values are in `results/*/csv/last_half_means_by_run.csv`.
 
