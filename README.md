@@ -157,10 +157,7 @@ The residue plots (373 K minus 300 K, and shear minus 373 K thermal) are in `res
 - Runs are 1 ns, and several RMSD curves are still rising. Slow processes such as unfolding or rearrangement of the oligomer are out of reach.
 - The shear is gentle: a strain rate of 0.25 ns⁻¹ gives a total strain of only 0.25 in 1 ns. Stronger or longer shear is untested.
 - The thermostat grouping differs between thermal and shear runs (see [Shear](#shear)).
-- 373 K is a temperature, not the extrusion condition. Extrusion also involves low water content, which isn't modelled.
-- All replicates start from the same structure and differ only in velocities, so they sample thermal variation around one conformation, not different conformations.
-- Global metrics such as RMSD depend on the fitting choice and on the reference, which here is the first frame.
-
+- 
 ## Repository layout
 
 ```
