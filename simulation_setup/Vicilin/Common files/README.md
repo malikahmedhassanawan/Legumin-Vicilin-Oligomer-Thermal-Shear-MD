@@ -4,13 +4,13 @@ Files shared by all vicilin trimer runs (300 K thermal, 373 K thermal, 373 K she
 
 ## System
 - Protein: pea vicilin trimer, 3 chains (A–C, 415 residues each), AlphaFold3 model (starting structure in PDB and CIF format: [structures folder](https://github.com/malikahmedhassanawan/Legumin-Vicilin-Oligomer-Thermal-Shear-MD/tree/main/structures))
-- Force field: <from topol.top>
-- Water model: <from topol.top>
-- Box: <from last line of em.gro>
-- Solvent: <number of SOL in topol.top> water molecules
-- Ions: Na+/Cl- (<NA count> Na+, <CL count> Cl-), neutralised
+- Force field: AMBER99SB-ILDN
+- Water model: SPC/E
+- Box: rhombic dodecahedron (xy-square), vectors 13.513 × 13.513 × 9.555 nm
+- Solvent: 50,655 water molecules
+- Ions: Na+/Cl- (179 Na+, 158 Cl-), neutralised
 - Total atoms: 172,243
-- GROMACS version: <from topol.top header>
+- GROMACS version: 2026.3
 
 ## Files
 | File | Description |
