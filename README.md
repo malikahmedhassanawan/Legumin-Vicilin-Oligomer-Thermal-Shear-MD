@@ -209,12 +209,3 @@ Contact: <varietyhavenllc@gmail.com>
 ---
 
 *This work is part of an ongoing research effort connecting computational protein science to food security challenges in South Punjab, Pakistan, using locally available legume crops as a model system for sustainable protein engineering.*
-
-## Author
-
-**Malik Ahmed Hassan Awan** BS (Hons) Food Science and Technology, Bahauddin Zakariya University, Multan, Pakistan
-Contact: <varietyhavenllc@gmail.com>
-
----
-
-*This work is part of an ongoing research effort connecting computational protein science to food security challenges in South Punjab, Pakistan, using locally available legume crops as a model system for sustainable protein engineering.*
