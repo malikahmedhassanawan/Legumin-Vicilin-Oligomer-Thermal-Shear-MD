@@ -3,7 +3,7 @@
 Files shared by all legumin hexamer runs (300 K thermal, 373 K thermal, 373 K shear; replicates r1 and r2). Run-specific files (NVT, NPT and production .mdp/.tpr) are in each run's folder.
 
 ## System
-- Protein: pea legumin hexamer, 6 chains (A–F), AlphaFold3 model
+- Protein: pea legumin hexamer, 6 chains (A–F), AlphaFold3 model (starting structure in PDB and CIF format in the repository's `structures/` folder)
 - Force field: AMBER99SB-ILDN
 - Water model: SPC/E
 - Box: rhombic dodecahedron (xy-square), vectors 14.504 × 14.504 × 10.256 nm
@@ -19,9 +19,10 @@ Files shared by all legumin hexamer runs (300 K thermal, 373 K thermal, 373 K sh
 | posre_Protein_chain_A–F.itp | Position restraints per chain |
 | solv.gro | Solvated system |
 | ions.mdp | Parameters for genion step |
+| ions.tpr | Input for genion step |
 | em.mdp | Energy minimisation parameters |
 | em.tpr | Energy minimisation input |
-| em.gro | Minimised structure, starting point for all NVT runs |
+| em.gro | Minimised structure (water and ions included), starting point for all NVT runs |
 
 ## Setup order
 pdb2gmx → editconf → solvate → genion → energy minimisation (em)
