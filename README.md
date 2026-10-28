@@ -167,15 +167,13 @@ simulation_setup/
     373K_thermal/         Run_1, Run_2
     373K_thermal+shear/   Run_1, Run_2 (shared nvt/npt, thermal and shear production)
   Vicilin/                same layout as Legumin
+analysis/
+  Legumin/ and Vicilin/   per-run analysis figures (PNG), in the same
+                          condition and Run_1/Run_2 folders
 structures/               AlphaFold3 models (PDB and CIF)
+alphafold_predictions/    raw AlphaFold3 outputs
 notebooks/                Colab notebooks
 docs/methods.md           detailed methods
-scripts/
-  analysis/               one script per run type and protein
-  comparison/             all-runs comparison, one per protein
-results/
-  legumin/                summary CSVs and figures
-  vicilin/
 ```
 
 Shared setup files: [Legumin Common files](https://github.com/malikahmedhassanawan/Legumin-Vicilin-Oligomer-Thermal-Shear-MD/tree/main/simulation_setup/Legumin/Common%20files) and [Vicilin Common files](https://github.com/malikahmedhassanawan/Legumin-Vicilin-Oligomer-Thermal-Shear-MD/tree/main/simulation_setup/Vicilin/Common%20files). Each condition folder has its own README with the replicate seeds.
