@@ -2,9 +2,13 @@ name: legumin-vicilin-md
 channels:
   - conda-forge
 dependencies:
-  - python=3.11
-  - gromacs=2026.3
+  - python>=3.10
+  - gromacs=2026.3=nompi_cuda*
+  - mdanalysis=2.10.0
   - numpy
+  - scipy
   - pandas
   - matplotlib
+  - biopython
+  - tqdm
   - jupyter
