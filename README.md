@@ -107,8 +107,21 @@ For replicate comparisons, a difference between two conditions is called separat
 
 ## Results
 
-Each cell is the percentage change of a run's last-half mean relative to the mean of the two 300 K replicates. Exact values are in `results/*/csv/last_half_means_by_run.csv`.
+### Legumin hexamer
 
+Per-run figures are in `analysis/Legumin/`, and the underlying `.xvg` data are in `simulations/`. Exact values are in `analysis/Legumin/comparison/csv/last_half_means_by_run.csv`.
+
+<Legumin results table: last-half means by condition>
+
+**Per-residue differences:** see `analysis/Legumin/comparison/figures/06_residue_deltas.png`.
+
+### Vicilin trimer
+
+Per-run figures are in `analysis/Vicilin/`, and the underlying `.xvg` data are in `simulations/`. Exact values are in `analysis/Vicilin/comparison/csv/last_half_means_by_run.csv`.
+
+<Vicilin results table: last-half means by condition>
+
+**Per-residue differences:** see `analysis/Vicilin/comparison/figures/06_residue_deltas.png`.
 ### Legumin hexamer
 
 | Run            | RMSD  | Rg   | SASA | H-bonds | Inter-chain H-bonds | Helix | Strand | Coil/turn |
