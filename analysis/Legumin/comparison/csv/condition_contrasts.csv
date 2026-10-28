@@ -1,0 +1,17 @@
+metric,contrast,baseline,value,delta,pct,gap_baseline,gap_value,bigger_than_both_gaps,replicates_separated
+RMSD (nm),thermal: 373 K - 300 K,0.2683,0.3206,0.0523,19.5022,0.0032,0.007,True,True
+RMSD (nm),shear: 373 K shear - 373 K thermal,0.3206,0.3201,-0.0005,-0.1596,0.007,0.0134,False,False
+Rg (nm),thermal: 373 K - 300 K,3.9248,3.9528,0.028,0.7131,0.0113,0.0045,True,True
+Rg (nm),shear: 373 K shear - 373 K thermal,3.9528,3.9554,0.0026,0.067,0.0045,0.0079,False,False
+SASA (nm2),thermal: 373 K - 300 K,883.1384,899.8665,16.7281,1.8942,16.7508,6.3229,False,True
+SASA (nm2),shear: 373 K shear - 373 K thermal,899.8665,904.4151,4.5486,0.5055,6.3229,1.0304,False,True
+H-bonds (hexamer),thermal: 373 K - 300 K,2719.0347,2642.0495,-76.9851,-2.8313,23.1584,24.3168,True,True
+H-bonds (hexamer),shear: 373 K shear - 373 K thermal,2642.0495,2622.2376,-19.8119,-0.7499,24.3168,30.6139,False,False
+Inter H-bonds,thermal: 373 K - 300 K,530.802,498.9851,-31.8168,-5.9941,5.1683,5.8911,True,True
+Inter H-bonds,shear: 373 K shear - 373 K thermal,498.9851,510.7178,11.7327,2.3513,5.8911,21.7921,False,False
+Helix (%),thermal: 373 K - 300 K,11.5939,10.912,-0.6819,-5.8812,0.2811,0.0313,True,True
+Helix (%),shear: 373 K shear - 373 K thermal,10.912,10.9578,0.0457,0.4192,0.0313,0.0103,True,True
+Strand (%),thermal: 373 K - 300 K,27.4195,27.5739,0.1544,0.563,0.6052,0.1367,False,False
+Strand (%),shear: 373 K shear - 373 K thermal,27.5739,27.2711,-0.3028,-1.098,0.1367,0.1288,True,True
+Coil/turn (%),thermal: 373 K - 300 K,60.9866,61.5141,0.5275,0.8649,0.8863,0.1055,False,True
+Coil/turn (%),shear: 373 K shear - 373 K thermal,61.5141,61.7711,0.257,0.4178,0.1055,0.1391,True,True

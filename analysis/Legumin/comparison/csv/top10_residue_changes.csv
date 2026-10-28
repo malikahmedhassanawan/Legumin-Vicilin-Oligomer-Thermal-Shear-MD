@@ -1,0 +1,101 @@
+contrast,metric,residue,delta
+Thermal: 373 K mean - 300 K mean,RMSF (nm),496,0.1679
+Thermal: 373 K mean - 300 K mean,RMSF (nm),495,0.1232
+Thermal: 373 K mean - 300 K mean,RMSF (nm),1,0.1188
+Thermal: 373 K mean - 300 K mean,RMSF (nm),98,0.0957
+Thermal: 373 K mean - 300 K mean,RMSF (nm),494,0.0917
+Thermal: 373 K mean - 300 K mean,RMSF (nm),99,0.0902
+Thermal: 373 K mean - 300 K mean,RMSF (nm),493,0.0818
+Thermal: 373 K mean - 300 K mean,RMSF (nm),97,0.0742
+Thermal: 373 K mean - 300 K mean,RMSF (nm),2,0.0732
+Thermal: 373 K mean - 300 K mean,RMSF (nm),179,0.0706
+Shear: 373 K shear mean - 373 K thermal mean,RMSF (nm),495,-0.0474
+Shear: 373 K shear mean - 373 K thermal mean,RMSF (nm),496,-0.0461
+Shear: 373 K shear mean - 373 K thermal mean,RMSF (nm),178,-0.0397
+Shear: 373 K shear mean - 373 K thermal mean,RMSF (nm),347,-0.0331
+Shear: 373 K shear mean - 373 K thermal mean,RMSF (nm),177,-0.0327
+Shear: 373 K shear mean - 373 K thermal mean,RMSF (nm),281,-0.0296
+Shear: 373 K shear mean - 373 K thermal mean,RMSF (nm),349,-0.0289
+Shear: 373 K shear mean - 373 K thermal mean,RMSF (nm),298,-0.0288
+Shear: 373 K shear mean - 373 K thermal mean,RMSF (nm),179,-0.0284
+Shear: 373 K shear mean - 373 K thermal mean,RMSF (nm),346,-0.0268
+Thermal: 373 K mean - 300 K mean,SASA per residue (nm2),3,-0.3824
+Thermal: 373 K mean - 300 K mean,SASA per residue (nm2),2,-0.2789
+Thermal: 373 K mean - 300 K mean,SASA per residue (nm2),14,-0.2462
+Thermal: 373 K mean - 300 K mean,SASA per residue (nm2),13,-0.2339
+Thermal: 373 K mean - 300 K mean,SASA per residue (nm2),259,0.2301
+Thermal: 373 K mean - 300 K mean,SASA per residue (nm2),208,0.2225
+Thermal: 373 K mean - 300 K mean,SASA per residue (nm2),181,-0.2028
+Thermal: 373 K mean - 300 K mean,SASA per residue (nm2),283,0.1955
+Thermal: 373 K mean - 300 K mean,SASA per residue (nm2),220,0.186
+Thermal: 373 K mean - 300 K mean,SASA per residue (nm2),284,-0.1693
+Shear: 373 K shear mean - 373 K thermal mean,SASA per residue (nm2),258,0.28
+Shear: 373 K shear mean - 373 K thermal mean,SASA per residue (nm2),176,0.2291
+Shear: 373 K shear mean - 373 K thermal mean,SASA per residue (nm2),103,-0.1727
+Shear: 373 K shear mean - 373 K thermal mean,SASA per residue (nm2),2,0.169
+Shear: 373 K shear mean - 373 K thermal mean,SASA per residue (nm2),366,-0.1487
+Shear: 373 K shear mean - 373 K thermal mean,SASA per residue (nm2),221,0.1415
+Shear: 373 K shear mean - 373 K thermal mean,SASA per residue (nm2),429,-0.1355
+Shear: 373 K shear mean - 373 K thermal mean,SASA per residue (nm2),220,-0.1192
+Shear: 373 K shear mean - 373 K thermal mean,SASA per residue (nm2),488,-0.1164
+Shear: 373 K shear mean - 373 K thermal mean,SASA per residue (nm2),6,0.1081
+Thermal: 373 K mean - 300 K mean,Helix fraction,493,-0.2794
+Thermal: 373 K mean - 300 K mean,Helix fraction,494,-0.2293
+Thermal: 373 K mean - 300 K mean,Helix fraction,356,-0.2106
+Thermal: 373 K mean - 300 K mean,Helix fraction,489,-0.1899
+Thermal: 373 K mean - 300 K mean,Helix fraction,352,0.1862
+Thermal: 373 K mean - 300 K mean,Helix fraction,490,-0.1571
+Thermal: 373 K mean - 300 K mean,Helix fraction,299,-0.143
+Thermal: 373 K mean - 300 K mean,Helix fraction,492,-0.1414
+Thermal: 373 K mean - 300 K mean,Helix fraction,351,0.1298
+Thermal: 373 K mean - 300 K mean,Helix fraction,455,-0.1227
+Shear: 373 K shear mean - 373 K thermal mean,Helix fraction,296,-0.2247
+Shear: 373 K shear mean - 373 K thermal mean,Helix fraction,295,-0.2044
+Shear: 373 K shear mean - 373 K thermal mean,Helix fraction,313,0.0962
+Shear: 373 K shear mean - 373 K thermal mean,Helix fraction,314,0.0962
+Shear: 373 K shear mean - 373 K thermal mean,Helix fraction,312,0.0937
+Shear: 373 K shear mean - 373 K thermal mean,Helix fraction,222,-0.0929
+Shear: 373 K shear mean - 373 K thermal mean,Helix fraction,220,-0.0929
+Shear: 373 K shear mean - 373 K thermal mean,Helix fraction,221,-0.0929
+Shear: 373 K shear mean - 373 K thermal mean,Helix fraction,351,-0.0867
+Shear: 373 K shear mean - 373 K thermal mean,Helix fraction,297,-0.0846
+Thermal: 373 K mean - 300 K mean,Strand fraction,325,0.3623
+Thermal: 373 K mean - 300 K mean,Strand fraction,254,-0.3516
+Thermal: 373 K mean - 300 K mean,Strand fraction,118,0.3271
+Thermal: 373 K mean - 300 K mean,Strand fraction,249,-0.2691
+Thermal: 373 K mean - 300 K mean,Strand fraction,336,-0.2052
+Thermal: 373 K mean - 300 K mean,Strand fraction,121,0.2002
+Thermal: 373 K mean - 300 K mean,Strand fraction,340,-0.1936
+Thermal: 373 K mean - 300 K mean,Strand fraction,69,0.1878
+Thermal: 373 K mean - 300 K mean,Strand fraction,429,-0.1758
+Thermal: 373 K mean - 300 K mean,Strand fraction,366,-0.1604
+Shear: 373 K shear mean - 373 K thermal mean,Strand fraction,325,-0.2873
+Shear: 373 K shear mean - 373 K thermal mean,Strand fraction,118,-0.2318
+Shear: 373 K shear mean - 373 K thermal mean,Strand fraction,380,0.1546
+Shear: 373 K shear mean - 373 K thermal mean,Strand fraction,266,-0.1418
+Shear: 373 K shear mean - 373 K thermal mean,Strand fraction,443,0.1397
+Shear: 373 K shear mean - 373 K thermal mean,Strand fraction,376,0.1343
+Shear: 373 K shear mean - 373 K thermal mean,Strand fraction,249,0.1339
+Shear: 373 K shear mean - 373 K thermal mean,Strand fraction,244,-0.1269
+Shear: 373 K shear mean - 373 K thermal mean,Strand fraction,264,0.1256
+Shear: 373 K shear mean - 373 K thermal mean,Strand fraction,324,-0.1157
+Thermal: 373 K mean - 300 K mean,H-bonds per residue,495,-1.075
+Thermal: 373 K mean - 300 K mean,H-bonds per residue,295,1.0054
+Thermal: 373 K mean - 300 K mean,H-bonds per residue,310,-0.9764
+Thermal: 373 K mean - 300 K mean,H-bonds per residue,151,0.9204
+Thermal: 373 K mean - 300 K mean,H-bonds per residue,333,-0.8661
+Thermal: 373 K mean - 300 K mean,H-bonds per residue,344,-0.8416
+Thermal: 373 K mean - 300 K mean,H-bonds per residue,216,-0.8284
+Thermal: 373 K mean - 300 K mean,H-bonds per residue,285,0.8271
+Thermal: 373 K mean - 300 K mean,H-bonds per residue,336,-0.8167
+Thermal: 373 K mean - 300 K mean,H-bonds per residue,297,-0.784
+Shear: 373 K shear mean - 373 K thermal mean,H-bonds per residue,253,-1.4901
+Shear: 373 K shear mean - 373 K thermal mean,H-bonds per residue,269,-0.8176
+Shear: 373 K shear mean - 373 K thermal mean,H-bonds per residue,290,-0.7459
+Shear: 373 K shear mean - 373 K thermal mean,H-bonds per residue,118,0.7371
+Shear: 373 K shear mean - 373 K thermal mean,H-bonds per residue,307,0.6924
+Shear: 373 K shear mean - 373 K thermal mean,H-bonds per residue,91,-0.6915
+Shear: 373 K shear mean - 373 K thermal mean,H-bonds per residue,288,-0.6393
+Shear: 373 K shear mean - 373 K thermal mean,H-bonds per residue,346,0.6095
+Shear: 373 K shear mean - 373 K thermal mean,H-bonds per residue,349,0.6086
+Shear: 373 K shear mean - 373 K thermal mean,H-bonds per residue,286,-0.6061
