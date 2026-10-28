@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+type: dataset
+title: "Legumin-Vicilin-Oligomer-Thermal-Shear-MD: GROMACS simulations of the pea legumin hexamer and vicilin trimer under heat and shear"
+authors:
+  - given-names: "Malik Ahmed Hassan"
+    family-names: "Awan"
+    affiliation: "Bahauddin Zakariya University, Multan, Pakistan"
+repository-code: "https://github.com/malikahmedhassanawan/Legumin-Vicilin-Oligomer-Thermal-Shear-MD"
+url: "https://github.com/malikahmedhassanawan/Legumin-Vicilin-Oligomer-Thermal-Shear-MD"
+license: MIT
+date-released: "2026-10-29"
+abstract: "GROMACS simulations of the pea legumin hexamer and the vicilin trimer at 300 K, at 373 K, and at 373 K with box shear. Each condition was run twice for 1 ns. The repository holds the setup files, trajectories' analysis outputs, comparison tables and figures, and the Colab notebooks used to produce them."
+keywords:
+  - molecular dynamics
+  - GROMACS
+  - legumin
+  - vicilin
+  - plant protein
+  - thermal processing
+  - shear
+  - AlphaFold3
