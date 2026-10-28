@@ -159,26 +159,23 @@ The residue plots (373 K minus 300 K, and shear minus 373 K thermal) are in `res
 
 ## Repository layout
 
-```
-simulation_setup/
-  Legumin/
-    Common files/         topology, per-chain .itp files, em and ion files, gro files, README
-    300K_thermal/         Run_1, Run_2 (nvt, npt and production mdp/tpr)
-    373K_thermal/         Run_1, Run_2
-    373K_thermal+shear/   Run_1, Run_2 (shared nvt/npt, thermal and shear production)
-  Vicilin/                same layout as Legumin
-structures/               AlphaFold3 models (PDB and CIF)
-notebooks/                Colab notebooks
-docs/methods.md           detailed methods
-scripts/
-  analysis/               one script per run type and protein
-  comparison/             all-runs comparison, one per protein
-results/
-  legumin/                summary CSVs and figures
-  vicilin/
-```
+| Folder | Contents |
+|---|---|
+| `simulation_setup/Legumin/Common files/` | Shared setup files: topology, per-chain `.itp` files, em and ion files, `.gro` files, README |
+| `simulation_setup/Legumin/300K_thermal/` | `Run_1`, `Run_2`: NVT, NPT and production `.mdp`/`.tpr` |
+| `simulation_setup/Legumin/373K_thermal/` | `Run_1`, `Run_2`: NVT, NPT and production `.mdp`/`.tpr` |
+| `simulation_setup/Legumin/373K_thermal+shear/` | `Run_1`, `Run_2`: NVT, NPT (same files as `373K_thermal`) and shear production `.mdp`/`.tpr` |
+| `simulation_setup/Vicilin/` | Same layout as Legumin |
+| `analysis/` | Per-run figures (PNG) for Legumin and Vicilin, in condition and `Run_1`/`Run_2` folders |
+| `simulations/` | `.xvg` data files for each run |
+| `structures/` | Original AlphaFold3 models (CIF and PDB) |
+| `alphafold_predictions/` | PyMOL GIFs of the structures: one coloured by confidence, one with each chain in a different colour (6 colours for legumin, 3 for vicilin) |
+| `notebooks/` | Colab notebooks |
+| `docs/methods.md` | Detailed methods |
 
 Shared setup files: [Legumin Common files](https://github.com/malikahmedhassanawan/Legumin-Vicilin-Oligomer-Thermal-Shear-MD/tree/main/simulation_setup/Legumin/Common%20files) and [Vicilin Common files](https://github.com/malikahmedhassanawan/Legumin-Vicilin-Oligomer-Thermal-Shear-MD/tree/main/simulation_setup/Vicilin/Common%20files). Each condition folder has its own README with the replicate seeds.
+  vicilin/
+```
 
 ## Methods Summary
 
