@@ -174,8 +174,8 @@ The residue plots (373 K minus 300 K, and shear minus 373 K thermal) are in `res
 | `docs/methods.md` | Detailed methods |
 
 Shared setup files: [Legumin Common files](https://github.com/malikahmedhassanawan/Legumin-Vicilin-Oligomer-Thermal-Shear-MD/tree/main/simulation_setup/Legumin/Common%20files) and [Vicilin Common files](https://github.com/malikahmedhassanawan/Legumin-Vicilin-Oligomer-Thermal-Shear-MD/tree/main/simulation_setup/Vicilin/Common%20files). Each condition folder has its own README with the replicate seeds.
-  vicilin/
-```
+
+Comparison outputs: [Legumin comparison](https://github.com/malikahmedhassanawan/Legumin-Vicilin-Oligomer-Thermal-Shear-MD/tree/main/analysis/Legumin/comparison) and [Vicilin comparison](https://github.com/malikahmedhassanawan/Legumin-Vicilin-Oligomer-Thermal-Shear-MD/tree/main/analysis/Vicilin/comparison), each with `csv/` (summary tables) and `figures/` (all-runs plots).
 
 ## Methods Summary
 
@@ -200,6 +200,15 @@ All simulations were run in Google Colab using free-tier GPU resources, making t
 3. Trajectory analysis and comparative visualization
 
 To rerun a simulation, start from the shared files in `Common files` and the NVT, NPT and production files in the run folder.
+
+## Author
+
+**Malik Ahmed Hassan Awan** BS (Hons) Food Science and Technology, Bahauddin Zakariya University, Multan, Pakistan
+Contact: <varietyhavenllc@gmail.com>
+
+---
+
+*This work is part of an ongoing research effort connecting computational protein science to food security challenges in South Punjab, Pakistan, using locally available legume crops as a model system for sustainable protein engineering.*
 
 ## Author
 
