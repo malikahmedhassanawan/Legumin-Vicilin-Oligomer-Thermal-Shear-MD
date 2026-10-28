@@ -166,7 +166,7 @@ The residue plots (373 K minus 300 K, and shear minus 373 K thermal) are in `res
 | `simulation_setup/Legumin/373K_thermal/` | `Run_1`, `Run_2`: NVT, NPT and production `.mdp`/`.tpr` |
 | `simulation_setup/Legumin/373K_thermal+shear/` | `Run_1`, `Run_2`: NVT, NPT (same files as `373K_thermal`) and shear production `.mdp`/`.tpr` |
 | `simulation_setup/Vicilin/` | Same layout as Legumin |
-| `analysis/` | Per-run figures (PNG) for Legumin and Vicilin, in condition and `Run_1`/`Run_2` folders |
+| `analysis/` | Per-run figures (PNG) for Legumin and Vicilin, in condition and Run_1/Run_2 folders. All-runs comparison is in comparison/csv and comparison/figures inside each protein folder.
 | `simulations/` | `.xvg` data files for each run |
 | `structures/` | Original AlphaFold3 models (CIF and PDB) |
 | `alphafold_predictions/` | PyMOL GIFs of the structures: one coloured by confidence, one with each chain in a different colour (6 colours for legumin, 3 for vicilin) |
