@@ -157,23 +157,39 @@ The residue plots (373 K minus 300 K, and shear minus 373 K thermal) are in `res
 - The thermostat grouping differs between thermal and shear runs (see [Shear](#shear)).
 - The starting structures are AlphaFold3 predictions, not experimental structures, and only one force field and water model (AMBER99SB-ILDN, SPC/E) were used.
 
-## Repository layout
+## Repository Layout
 
-```
-simulation_setup/
-  Legumin/
-    Common files/         topology, per-chain .itp files, em and ion files, gro files, README
-    300K_thermal/         Run_1, Run_2 (nvt, npt and production mdp/tpr)
-    373K_thermal/         Run_1, Run_2
-    373K_thermal+shear/   Run_1, Run_2 (shared nvt/npt, thermal and shear production)
-  Vicilin/                same layout as Legumin
-analysis/
-  Legumin/ and Vicilin/   per-run analysis figures (PNG), in the same
-                          condition and Run_1/Run_2 folders
-structures/               AlphaFold3 models (PDB and CIF)
-alphafold_predictions/    raw AlphaFold3 outputs
-notebooks/                Colab notebooks
-docs/methods.md           detailed methods
+.
+├── alphafold_predictions/   # AlphaFold 3 outputs, confidence GIFs, and chain-colored PyMOL visualizations
+├── analysis/                # Simulation analysis PNGs, results, and condition-wise comparisons
+│   ├── Legumin/
+│   └── Vicilin/
+├── docs/
+│   └── methods.md           # Detailed simulation and analysis methodology
+├── notebooks/               # Google Colab/Jupyter notebooks
+├── simulation_setup/        # GROMACS topologies, ITP files, coordinates, and MDP inputs
+│   ├── Legumin/
+│   │   ├── Common_files/
+│   │   ├── 300K_thermal/
+│   │   ├── 373K_thermal/
+│   │   └── 373K_thermal_shear/
+│   └── Vicilin/             # Same condition-based organization
+├── simulations/             # GROMACS outputs and XVG files, organized by protein and condition
+│   ├── Legumin/
+│   └── Vicilin/
+├── structures/              # Selected AlphaFold 3 models in PDB and CIF formats
+├── LICENSE
+└── README.md
+
+Directory contents:
+
+- "alphafold_predictions/" — AlphaFold 3 prediction outputs, confidence-based GIFs, and PyMOL visualizations showing individual protein chains in different colors.
+- "analysis/" — PNG figures and analysis results for RMSD, radius of gyration (Rg), SASA, hydrogen bonds, and RMSF. Results are organized by protein and simulation condition, with separate comparison figures for Legumin and Vicilin.
+- "docs/methods.md" — Detailed methods, simulation parameters, software versions, and analysis procedures.
+- "notebooks/" — Google Colab/Jupyter notebooks for simulation analysis and visualization.
+- "simulation_setup/" — Shared topology files, per-chain ITP files, coordinate files, energy-minimization and ion files, and NVT/NPT/production MDP inputs. Condition folders contain replicate-specific configurations and README files.
+- "simulations/" — Simulation outputs organized by protein, temperature, stress condition, and replicate, including relevant GROMACS output files and XVG data.
+- "structures/" — Legumin hexamer and Vicilin trimer structures in PDB and CIF formats.
 ```
 
 Shared setup files: [Legumin Common files](https://github.com/malikahmedhassanawan/Legumin-Vicilin-Oligomer-Thermal-Shear-MD/tree/main/simulation_setup/Legumin/Common%20files) and [Vicilin Common files](https://github.com/malikahmedhassanawan/Legumin-Vicilin-Oligomer-Thermal-Shear-MD/tree/main/simulation_setup/Vicilin/Common%20files). Each condition folder has its own README with the replicate seeds.
