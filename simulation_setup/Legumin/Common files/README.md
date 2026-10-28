@@ -3,7 +3,7 @@
 Files shared by all legumin hexamer runs (300 K thermal, 373 K thermal, 373 K shear; replicates r1 and r2). Run-specific files (NVT, NPT and production .mdp/.tpr) are in each run's folder.
 
 ## System
-- Protein: pea legumin hexamer, 6 chains (A–F), AlphaFold3 model (starting structure in PDB and CIF format in the repository's `structures/` folder)
+- Protein: pea legumin hexamer, 6 chains (A–F), AlphaFold3 model (starting structure in PDB and CIF format: [structures folder](https://github.com/malikahmedhassanawan/Legumin-Vicilin-Oligomer-Thermal-Shear-MD/tree/main/structures))
 - Force field: AMBER99SB-ILDN
 - Water model: SPC/E
 - Box: rhombic dodecahedron (xy-square), vectors 14.504 × 14.504 × 10.256 nm
